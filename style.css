@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Press+Start+2P&display=swap');
+/* CSS Variables */
+
+:root {
+    --main-bg-color: rgb(24, 29, 48);
+    --secondary-bg-color: rgb(15, 18, 29);
+    --primary-color: rgb(65, 244, 65);
+    --code-font: 'Fira Code', monospace;
+    --color-light: rgb(216, 216, 216)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Utility Classes */
+.press-start {
+    font-family: 'Press Start 2P', cursive;
+}
+
+body {
+    background-color: var(--main-bg-color);
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+    min-height: 100vh;
+    background-color: var(--secondary-bg-color);
+    border-left: 5px dashed var(--primary-color);
+    border-right: 5px dashed var(--primary-color);
+}
+
+.title {
+    color: var(--primary-color);
+    text-align: center;
+    padding: 1em;
+}
+
+main {
+    color: var(--color-light);
+    font-family: var(--code-font);
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+label,
+input,
+button {
+    font-size: 1.5em;
+    font-family: var(--code-font);
+    margin-right: 1em;
+}
+
+input {
+    padding: .25em;
+    border: 0;
+    /* border-radius: .25em; */
+}
+
+button {
+    padding: .25em .5em;
+    border: 0;
+    /* border-radius: .25em; */
+    background-color: var(--primary-color);
+    color: var(--secondary-bg-color);
+    cursor: pointer;
+    transition: all 150ms ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+#cards-container {
+    padding: 1.5em;
+    margin: 0 auto;
+    display: flex;
+    gap: 1.5em;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 400px;
+    background-color: rgb(223, 223, 223);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--secondary-bg-color);
+}
+
+.card-image {
+    width: 150px;
+}
+
+.card-body {
+    margin-left: 1.5em;
+}
+
+.card-body h3 {
+    color: var(--secondary-bg-color);
+    margin-bottom: .5em;
+}
+
+.card-body h4 {
+    color: var(--secondary-bg-color);
+}
